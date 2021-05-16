@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.htlinn.javafx_examples.scenebuilder.ex_03_css.FirstController">
+
+	<bottom>
+		<Label fx:id="status" BorderPane.alignment="CENTER" />
+	</bottom>
+   <center>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="250.0" style="-fx-background-color: green;" />
+            <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="250.0" style="-fx-border-color: red;" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
