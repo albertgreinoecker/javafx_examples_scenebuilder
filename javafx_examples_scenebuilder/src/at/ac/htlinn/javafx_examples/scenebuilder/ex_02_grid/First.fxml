@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.htlinn.javafx_examples.scenebuilder.ex_02_grid.FirstController">
+
+	<center>
+		<GridPane fx:id="grid" alignment="CENTER" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+			<columnConstraints>
+				<ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" />
+				<RowConstraints />
+			</rowConstraints>
+			<children>
+				<Button id="id0" fx:id="b00" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickAny" text="0" />
+				<Button id="id1" fx:id="b01" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickAny" text="0" GridPane.columnIndex="1" />
+				<Button id="id2" fx:id="b02" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickAny" prefWidth="100.0" text="0" GridPane.columnIndex="2" />
+				<Button id="id3" fx:id="b10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickAny" text="0" GridPane.rowIndex="1" />
+				<Button id="id4" fx:id="b11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickAny" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<Button id="id5" fx:id="b12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickAny" prefWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+				<Button id="id6" fx:id="b20" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickAny" text="0" GridPane.rowIndex="2" />
+				<Button id="id7" fx:id="b21" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickAny" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+				<Button id="id8" fx:id="b22" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickAny" prefWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+			</children>
+		</GridPane>
+	</center>
+	<bottom>
+		<Label fx:id="status" BorderPane.alignment="CENTER" />
+	</bottom>
+</BorderPane>
