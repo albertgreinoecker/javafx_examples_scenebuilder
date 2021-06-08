@@ -73,15 +73,6 @@ public class GameController {
 			super.finalize();
 		}
 
-		@Override
-		public void start() {
-			super.start();
-		}
-
-		@Override
-		public void stop() {
-			super.stop();
-		}
 
 		@Override
 		public void handle(long now) {
@@ -99,6 +90,7 @@ public class GameController {
 				}
 			}
 			gc.drawImage(shipImg, player.getX(), player.getY());
+			noMonsterLbl.setText(String.format("M: %d", monsters.size()));
 		}
 	}
 
@@ -114,9 +106,6 @@ public class GameController {
 			Sprite m = new Sprite((int) (Math.random() * field.getWidth()), 0);
 			System.out.println(m);
 			monsters.add(m);
-			Platform.runLater(() -> {
-				noMonsterLbl.setText(String.format("M: %d", monsters.size()));
-			});
 		}
 	}
 
