@@ -5,7 +5,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import javafx.animation.AnimationTimer;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
